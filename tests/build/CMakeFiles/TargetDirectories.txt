@@ -1,0 +1,3 @@
+/Users/sergiovirahonda/Documents/Arduino/DroneController/tests/build/CMakeFiles/drone_controller_tests.dir
+/Users/sergiovirahonda/Documents/Arduino/DroneController/tests/build/CMakeFiles/edit_cache.dir
+/Users/sergiovirahonda/Documents/Arduino/DroneController/tests/build/CMakeFiles/rebuild_cache.dir
