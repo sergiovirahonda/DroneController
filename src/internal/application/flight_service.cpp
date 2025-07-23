@@ -1,4 +1,8 @@
 #include "flight_service.h"
+#include "internal/domain/motor_output.h"
+#include "internal/domain/drone_command.h"
+
+#include <Arduino.h>
 
 FlightService::FlightService(float Kp, float Ki, float Kd) {
     this->Kp = Kp;

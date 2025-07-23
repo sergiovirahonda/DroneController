@@ -8,7 +8,7 @@ class MotorOutput {
     int motor3Speed;
     int motor4Speed;
   public:
-    MotorOutput(int motor1Speed, int motor2Speed, int motor3Speed, int motor4Speed);
+    MotorOutput();
     void setMotor1Speed(int motor1Speed);
     void setMotor2Speed(int motor2Speed);
     void setMotor3Speed(int motor3Speed);

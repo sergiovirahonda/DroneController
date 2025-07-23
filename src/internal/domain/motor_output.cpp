@@ -1,10 +1,10 @@
 #include "motor_output.h"
 
-MotorOutput::MotorOutput(int motor1Speed, int motor2Speed, int motor3Speed, int motor4Speed) {
-    this->motor1Speed = motor1Speed;
-    this->motor2Speed = motor2Speed;
-    this->motor3Speed = motor3Speed;
-    this->motor4Speed = motor4Speed;
+MotorOutput::MotorOutput() {
+    this->motor1Speed = 1000;
+    this->motor2Speed = 1000;
+    this->motor3Speed = 1000;
+    this->motor4Speed = 1000;
 }
 
 // Setters
