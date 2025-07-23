@@ -5,25 +5,25 @@
 #include <Arduino.h>
 
 // Define radio CE & CSN pins
-#define CE_PIN  9
-#define CSN_PIN 10
-const byte address[6] = "00001";
+#define RADIO_CE_PIN  9
+#define RADIO_CSN_PIN 10
+const byte radioAddress[6] = "00001";
 
 // MPU setup
 MPU6050 mpu(Wire);
 
 // Motor pin assignments
-int motor1Pin = 3;
-int motor2Pin = 5;
-int motor3Pin = 6;
-int motor4Pin = 9;
+#define MOTOR1_PIN 3
+#define MOTOR2_PIN 5
+#define MOTOR3_PIN 6
+#define MOTOR4_PIN 9
 
 // Global variables
 Attitude attitude;
 
-RadioDriver radio(CE_PIN, CSN_PIN, address);
+RadioDriver radio(RADIO_CE_PIN, RADIO_CSN_PIN, radioAddress);
 MPUDriver mpuDriver(address);
-MotorDriver motorDriver(motor1Pin, motor2Pin, motor3Pin, motor4Pin);
+MotorDriver motorDriver(MOTOR1_PIN, MOTOR2_PIN, MOTOR3_PIN, MOTOR4_PIN);
 FlightService flightService(0.1, 0.0, 0.0);
 
 void setup() {
