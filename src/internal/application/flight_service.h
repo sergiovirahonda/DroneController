@@ -11,9 +11,10 @@ class FlightService {
         MotorOutput computeMotorOutput(DroneCommand& command, Attitude& attitude);
 
     private:
-        float PID(float target, float current, float& integral, float& previousError);
+        float PID(float target, float current);
+        float Kp, Ki, Kd;
         float pitchIntegral, rollIntegral;
         float pitchPrevError, rollPrevError;
-}
+};
 
 #endif
